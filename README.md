@@ -1,2 +1,2 @@
-# Chesse
-Chess in C by Jesse
+# Chesse++
+Chess in C++ by Jesse
