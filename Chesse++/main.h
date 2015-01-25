@@ -6,5 +6,5 @@
 #include <stdlib.h>
 
 
-// Include my project headers ..?
-
+int main(int argc, char** argv);
+void waitForClose();
