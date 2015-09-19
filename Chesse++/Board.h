@@ -8,6 +8,13 @@ namespace Chesse
 	{
 
 	public:
+		// Initialises new Board with default starting position
+		Board();
+
+		// Initialises new Board with state defined by given FEN notation
+		Board(std::string FENString);
+
+
 		bitboard getBlackPieces();
 		bitboard getWhitePieces();
 		bitboard getAllPieces();
@@ -33,6 +40,8 @@ namespace Chesse
 		   1 in a rank 3 or 6 position if en passant is available
 		   These 2 state types have no position overlap so storing in one bitboard */
 		bitboard mSpecialMoves;
+
+		void parseFEN(std::string FENString);
 
 	};
 }

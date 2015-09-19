@@ -2,6 +2,17 @@
 
 namespace Chesse
 {
+	Board::Board()
+	{
+		std::string defaultFEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
+		parseFEN(defaultFEN);
+	}
+
+	Board::Board(std::string FENString)
+	{
+		parseFEN(FENString);
+	}
+
 	bitboard Board::getBlackPieces()
 	{
 		return mBlackRooks & mBlackKnights & mBlackBishops & mBlackQueens & mBlackKing & mBlackPawns;
@@ -27,6 +38,16 @@ namespace Chesse
 		{
 			return getWhitePieces();
 		}
+	}
+
+	void Board::parseFEN(std::string FENString)
+	{
+		// TODO
+		// Split by space
+		// Split first part by /
+		// Parse all ranks
+		// Parse special sections
+
 	}
 
 }
