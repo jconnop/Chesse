@@ -10,7 +10,9 @@ int main(int argc, char** argv)
 	Chesse::Player white(Chesse::Player::Color::White);
 	Chesse::Player black(Chesse::Player::Color::Black);
 
-	Chesse::Game game(white, black);
+	Chesse::Board board;
+
+	Chesse::Game game(white, black, board);
 
 	Chesse::Player::Color winner = game.Play();
 

@@ -10,7 +10,7 @@ namespace Chesse
 	{
 
 	public:
-		Game(Player white, Player black);
+		Game(Player white, Player black, Board board);
 		~Game();
 
 		// Performs main game logic loop

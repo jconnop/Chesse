@@ -2,8 +2,8 @@
 
 namespace Chesse
 {
-	Game::Game(Player white, Player black) :
-		mWhite(white), mBlack(black)
+	Game::Game(Player white, Player black, Board board) :
+		mWhite(white), mBlack(black), mBoard(board)
 	{
 
 	}
