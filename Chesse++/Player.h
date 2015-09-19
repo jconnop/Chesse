@@ -15,12 +15,17 @@ namespace Chesse
 			None = 2
 		};
 
+		Player(Player::Color color);
+		~Player();
+
 		// Gets next move for player
 		// TODO: some type of 'Move' return type
 		//GetMove(Board *board);
 
 	private:
+		Player();
 
+		Player::Color mColor;
 
 	};
 }

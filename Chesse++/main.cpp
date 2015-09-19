@@ -7,8 +7,8 @@ int main(int argc, char** argv)
 {
 	std::cout << "Hello, world!" << std::endl;
 
-	Chesse::Player white;
-	Chesse::Player black;
+	Chesse::Player white(Chesse::Player::Color::White);
+	Chesse::Player black(Chesse::Player::Color::Black);
 
 	Chesse::Game game(white, black);
 
