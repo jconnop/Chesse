@@ -1,4 +1,5 @@
 #pragma once
+
 #include "main.h"
 
 namespace Chesse
@@ -8,14 +9,7 @@ namespace Chesse
 	{
 
 	public:
-		enum Color : unsigned int
-		{
-			White = 0,
-			Black = 1,
-			None = 2
-		};
-
-		Player(Player::Color color);
+		Player(Color color);
 		~Player();
 
 		// Gets next move for player
@@ -25,7 +19,7 @@ namespace Chesse
 	private:
 		Player();
 
-		Player::Color mColor;
+		Color mColor;
 
 	};
 }

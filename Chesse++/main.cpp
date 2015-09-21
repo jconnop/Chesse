@@ -5,27 +5,25 @@
 
 int main(int argc, char** argv)
 {
-	std::cout << "Hello, world!" << std::endl;
+	cout << "Hello, world!" << endl;
 
-	Chesse::Player white(Chesse::Player::Color::White);
-	Chesse::Player black(Chesse::Player::Color::Black);
+	Chesse::Player white(Chesse::Color::White);
+	Chesse::Player black(Chesse::Color::Black);
 
-	Chesse::Board board;
+	Chesse::Game game(white, black);
 
-	Chesse::Game game(white, black, board);
-
-	Chesse::Player::Color winner = game.Play();
+	Chesse::Color winner = game.Play();
 
 	switch (winner)
 	{
-	case Chesse::Player::White:
-		std::cout << "White wins!" << std::endl;
+	case Chesse::Color::White:
+		cout << "White wins!" << endl;
 		break;
-	case Chesse::Player::Black:
-		std::cout << "Black wins!" << std::endl;
+	case Chesse::Color::Black:
+		cout << "Black wins!" << endl;
 		break;
-	case Chesse::Player::None:
-		std::cout << "Everybody loses." << std::endl;
+	case Chesse::Color::None:
+		cout << "Everybody loses." << endl;
 		break;
 	}
 
@@ -35,6 +33,6 @@ int main(int argc, char** argv)
 
 void waitForClose()
 {
-	std::string temp;
-	std::cin >> temp;
+	string temp;
+	cin >> temp;
 }

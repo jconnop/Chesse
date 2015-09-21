@@ -3,7 +3,7 @@
 namespace Chesse
 {
 
-	Player::Player(Player::Color color)
+	Player::Player(Color color)
 		: mColor(color)
 	{
 	}
